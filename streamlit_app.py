@@ -19,13 +19,13 @@ def load_lottie_animation(file_path):
 
 # Function to apply snowfall effect
 def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+    rain(emoji="🌟", font_size=20, falling_speed=5, animation_length="infinite")
 
 
 # Function to get the name from query parameters
 def get_person_name():
     query_params = st.experimental_get_query_params()
-    return query_params.get("name", ["Friend"])[0]
+    return query_params.get("name", ["WRWS"])[0]
 
 
 # Page configuration
@@ -40,7 +40,11 @@ with open(CSS_FILE) as f:
 
 # Display header with personalized name
 PERSON_NAME = get_person_name()
+_= """
 st.header(f"Happy Holidays, {PERSON_NAME}! 🎄", anchor=False)
+"""
+header_html = f"<h1 style='color: red;'>Happy Holidays, {PERSON_NAME}! 🎄</h1>"
+st.markdown(header_html, unsafe_allow_html=True)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
@@ -48,50 +52,6 @@ st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Dear {PERSON_NAME}, wishing you a wonderful holiday season filled with joy and peace. 🌟"
+    f"Dear <span style='color: red;'>{PERSON_NAME}</span>, wishing you a wonderful holiday season filled with joy and peace. 🌟",
+    unsafe_allow_html=True
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
