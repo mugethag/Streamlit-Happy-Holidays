@@ -25,11 +25,11 @@ def run_snow_animation():
 # Function to get the name from query parameters
 def get_person_name():
     query_params = st.experimental_get_query_params()
-    return query_params.get("name", ["WRWS"])[0]
+    return query_params.get("name", ["from WRWS"])[0]
 
 
 # Page configuration
-st.set_page_config(page_title="Happy Holidays", page_icon="🎄")
+st.set_page_config(page_title="Happy Holidays", page_icon="🎉")
 
 # Run snowfall animation
 run_snow_animation()
