@@ -8,7 +8,7 @@ from streamlit_extras.let_it_rain import rain
 THIS_DIR = Path(__file__).parent
 CSS_FILE = THIS_DIR / "style" / "style.css"
 ASSETS = THIS_DIR / "assets"
-LOTTIE_ANIMATION = ASSETS / "animation_holiday.json"
+LOTTIE_ANIMATION = ASSETS / "animation_newyear.json"
 
 
 # Function to load and display the Lottie animation
