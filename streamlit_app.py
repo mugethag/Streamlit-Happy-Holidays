@@ -52,6 +52,6 @@ st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Dear <span style='color: red; font-size: 40px'>{PERSON_NAME}</span>, wishing you a wonderful holiday season filled with joy and peace. 🌟",
+    f"Dear <span style='color: red; font-size: 40px'>Friends!</span>, wishing you a wonderful holiday season filled with joy and peace. 🌟",
     unsafe_allow_html=True
 )
