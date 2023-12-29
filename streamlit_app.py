@@ -43,7 +43,7 @@ PERSON_NAME = get_person_name()
 _= """
 st.header(f"Happy Holidays, {PERSON_NAME}! 🎉", anchor=False)
 """
-header_html = f"<h1 style='color: red;'>Happy Holidays, {PERSON_NAME}! 🎄</h1>"
+header_html = f"<h1 style='color: red;'>Happy Holidays, {PERSON_NAME}! 🎉</h1>"
 st.markdown(header_html, unsafe_allow_html=True)
 
 # Display the Lottie animation
