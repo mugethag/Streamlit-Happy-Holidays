@@ -41,7 +41,7 @@ with open(CSS_FILE) as f:
 # Display header with personalized name
 PERSON_NAME = get_person_name()
 _= """
-st.header(f"Happy Holidays, {PERSON_NAME}! \🎉", anchor=False)
+st.header(f"Happy Holidays, {PERSON_NAME}! 🎉", anchor=False)
 """
 header_html = f"<h1 style='color: red;'>Happy Holidays, {PERSON_NAME}! 🎄</h1>"
 st.markdown(header_html, unsafe_allow_html=True)
